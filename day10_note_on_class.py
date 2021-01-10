@@ -82,8 +82,8 @@ print(drummer.title)
 
 
 # METHODS
-# Methods are functions that are defined as part of a class. The first argument in a method is always the
-# object that is calling the method. Convention recommends that we name this first argument self.
+# Methods are functions that are defined as part of a class. The first arguement in a method is always the
+# object that is calling the method. Convention recommends that we name this first argument "self".
 # Methods always have at least (self) arguement. We define methods similarly to functions, except
 # that they are indented to be part of the class.
 
@@ -181,7 +181,7 @@ print(circle_b.radius)    # 2
 
 
 # ATTRIBUTE FUNCTIONS
-# Both class and instance variables are considered attribute of an object or instance of a class
+# Both class variable and instance variables are considered attribute of an object or instance of a class
 # If we try to access non-existence attribute, we get AttributeError
 # To check if attribute exist (remember attributes referred to both class & instance variables), we can
 # use hasattr()...it returns True if exist, else, False

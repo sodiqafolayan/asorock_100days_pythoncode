@@ -1,6 +1,7 @@
+import time as time
 # This accepts input from a user which will be converted to Fibonacci series
 n = int(input("Enter a number: "))
-
+print(time.perf_counter())
 # first and second stores the variable as the starting point of our series
 # We created these variables because the series can only start after adding
 # two preceeding numbers. Hence, 0 and 1. This could be any number too. However,
@@ -23,3 +24,4 @@ for i in range(n):
 # So this iteration goes on until range(n) and the value for the variables increment.
 # I hope this isn't confusing. I can explain better if not clear
 # just let me know
+print(time.perf_counter())

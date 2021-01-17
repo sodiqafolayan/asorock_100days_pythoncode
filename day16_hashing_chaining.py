@@ -1,3 +1,5 @@
+# https://practice.geeksforgeeks.org/tracks/DS-Python-Hashing/?batchId=273
+
 class MyHashTable:
     def __init__(self, b): # this defines the instance variable and will be different (except we provide 
                                 # same variable) for each instance/object

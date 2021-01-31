@@ -1,5 +1,5 @@
 # https://practice.geeksforgeeks.org/problems/3b76f77c1b2107f809b1875aa9fe929ce320be97/1/?track=30-DOC-day-7&batchId=320#
-
+from itertools import combinations
 
 # Solution 1
  def ValidPair(self, a, n): 

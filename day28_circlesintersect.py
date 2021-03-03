@@ -1,7 +1,8 @@
 """
-Write the function distance(x1, y1, x2, y2) that takes four int or float 
-values x1, y1, x2, y2 that represent the two points (x1, y1) and (x2, y2), 
-and returns the distance between those points as a float.
+Write the function circlesIntersect(x1, y1, r1, x2, y2, r2) that takes 6 numbers 
+(ints or floats) -- x1, y1, r1, x2, y2, r2 -- that describe the circle centered at 
+(x1,y1) with radius r1, and the circle centered at (x2,y2) with radius r2, and 
+returns True if the two circles intersect and False otherwise.
 """
 from math import sqrt
 

@@ -12,7 +12,7 @@ getInRange(6, 5, 3) also returns 5 (the upper bound, since 6 lies to the right o
 
 # Option 1
 def getInRange(x, bound1, bound2):
-    # low sets a vairable for the smaller number since the question isn't clear on this
+    # low sets a variable for the smaller number since the question isn't clear on this
     low = min(bound1, bound2)
     # high sets a vairable for the higher number since the question isn't clear on this
     high = max(bound1, bound2)

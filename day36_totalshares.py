@@ -2,12 +2,14 @@
 Modify your pcost.py program so that it uses the csv module for parsing and try running earlier examples.
 """
 import csv
+import sys
 
 def totalShares(file):
     with open(file, "r") as portfolio:
-        portfolioCSV = csv.reader(portfolio)
         # next() will return same file but from the next line
+        portfolioCSV = csv.reader(portfolio)
         portfolioheader = next(portfolioCSV)
+    
         totalSharesCost = 0.0
         for row in portfolioCSV:
             try:
@@ -17,6 +19,11 @@ def totalShares(file):
             except ValueError:
                 print("Bad Row: ", row)
     return totalSharesCost
-    
 
-print(totalShares("Data/missing.csv"))
+if len(sys.argv) == 2:
+    file = sys.argv[1]
+else:
+    file = "Data/portfolio.csv"
+
+
+print(totalShares("Data/portfolio.csv"))

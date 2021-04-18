@@ -55,7 +55,7 @@ print(f"Portfolio Value less current price value: {round(portfolioValue - priceV
 """
 def make_report(portfolioData, currentprice):
     c = []
-    for item in myPortfolio:
+    for item in portfolioData:
         c.append((item['name'], item['shares'], item['price'], round(item['price'] - currentprice[item['name']], 2)))
     return c
 

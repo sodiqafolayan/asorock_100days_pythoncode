@@ -18,7 +18,7 @@ def read_portfolio(filename):
         # each row is now a list and items are strings
         for row in data:
             # we turn each row to dictionary and change shares and prices to int and float respectively
-            holding = {header[0]: row[0], header[1]                       : int(row[1]), header[2]: float(row[2])}
+            holding = {header[0]: row[0], header[1]: int(row[1]), header[2]: float(row[2])}
             # appending tupples to our list
             list_of_dict.append(holding)
     return list_of_dict
@@ -73,23 +73,24 @@ current_prices = read_prices("Data/prices.csv")
 def gain_loss(portfolio_value: list, latest_price: dict) -> dict:
     gain_loss_list = []
     for item in portfolio_value:
-        holding = (item["name"], item["shares"], item["price"],
+        holding = (item["name"], item["shares"], str(item["price"],
                    round(latest_price[item["name"]] - item["price"], 2))
         gain_loss_list.append(holding)
 
     return gain_loss_list
 
 
-gain_and_loss = gain_loss(portfolio, current_prices)
+gain_and_loss=gain_loss(portfolio, current_prices)
 
 
 def make_report(report):
-    headers = ('Name', 'Shares', 'Price', 'Change')
+    headers=('Name', 'Shares', 'Price', 'Change')
     print(
         f"{headers[0]:>10s} {headers[1]:>10s} {headers[2]:>10s} {headers[-1]:>10s}")
     print("-" * 10, "-" * 10, "-" * 10, "-" * 10)
     for item in report:
-        print(f"{item[0]:>10s} {item[1]:10d} {item[2]:10,.2f} {item[-1]:10,.2f}")
+        print(
+            f"{item[0]:>10s} {item[1]:10d} {tem[2]:10,.2f} {item[-1]:10,.2f}")
     return "Done"
 
 
